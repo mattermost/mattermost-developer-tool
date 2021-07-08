@@ -13,7 +13,6 @@
   "parser": "babel-eslint",
   "plugins": [
     "react",
-    "import",
     "header"
   ],
   "env": {
@@ -138,23 +137,6 @@
       " Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.\n See LICENSE.txt for license information."
     ],
     "id-blacklist": 0,
-    "import/no-unresolved": 2,
-    "import/order": [
-      "error",
-      {
-        "newlines-between": "always-and-inside-groups",
-        "groups": [
-          "builtin",
-          "external",
-          [
-            "internal",
-            "parent"
-          ],
-          "sibling",
-          "index"
-        ]
-      }
-    ],
     "indent": [
       2,
       4,

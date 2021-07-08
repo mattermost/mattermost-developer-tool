@@ -1,9 +1,8 @@
 {
   "extends": [
-    "./node_modules/eslint-config-mattermost/configs/.eslintrc.json"
+    "./node_modules/eslint-config-mattermost/.eslintrc.json"
   ],
   "plugins": [
-    "import"
   ],
   "env": {
     "jest": true
@@ -12,23 +11,6 @@
     "import/resolver": "webpack"
   },
   "rules": {
-    "import/no-unresolved": 2,
-    "import/order": [
-      "error",
-      {
-        "newlines-between": "always-and-inside-groups",
-        "groups": [
-          "builtin",
-          "external",
-          [
-            "internal",
-            "parent"
-          ],
-          "sibling",
-          "index"
-        ]
-      }
-    ],
     "no-magic-numbers": [
       1,
       {
